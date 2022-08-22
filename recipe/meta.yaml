@@ -1,17 +1,17 @@
 {% set name = "album-runner" %}
-{% set version = "0.4.2" %}
+{% set version = "0.5.0" %}
 
 package:
-  name: "{{ name|lower }}"
-  version: "{{ version }}"
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
-  url: "https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz"
-  sha256: a6eae257c6e2b091af284eedb6e680e75610c67b2688edc6fdbf663310600196
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: c2db56fa706ff69bffdf63ac6c008adf8325dd4ae6ad4d18931ee310c96391fd
 
 build:
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
 requirements:
@@ -35,7 +35,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: "album is a tool for unifying computational tools across frameworks, languages, and environments"
+  summary: album is a tool for unifying computational tools across frameworks, languages, and environments
   doc_url: https://docs.album.solutions
   dev_url: https://gitlab.com/album-app/album-runner
 
