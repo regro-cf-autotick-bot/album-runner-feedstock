@@ -1,11 +1,11 @@
-About album-runner
-==================
+About album-runner-feedstock
+============================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/album-runner-feedstock/blob/main/LICENSE.txt)
 
 Home: https://album.solutions
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/album-runner-feedstock/blob/main/LICENSE.txt)
 
 Summary: album is a tool for unifying computational tools across frameworks, languages, and environments
 
